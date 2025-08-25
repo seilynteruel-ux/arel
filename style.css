@@ -1,0 +1,166 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Tipo de letra para todo el texto */
+    background-color: #F4E2D8; /* Fondo principal */
+    color: #05183C; /* Color de texto oscuro */
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Butler', serif; /* Tipo de letra para los títulos */
+    font-weight: 700;
+}
+
+.hero {
+    background-color: #ffff; /* Color de acento suave */
+    color: #05183C;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5em;
+    margin-bottom: 0.1em;
+}
+
+.hero-subtitle {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    color: #C85858; /* Color de acento vibrante */
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #C85858;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-us, .packages {
+    margin-bottom: 60px;
+}
+
+.about-us p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.03);
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.package-card {
+    background-color: #D8A39D;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-card h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.package-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(5, 24, 60, 0.1);
+}
+
+.package-card li:last-child {
+    border-bottom: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #C85858;
+    color: #F4E2D8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a34646;
+}
+
+.footer {
+    background-color: #05183C;
+    color: #F4E2D8;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+    border-top: 5px solid #C85858;
+}
+
+.contact-link {
+    color: #F4E2D8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo {
+    max-width: 400px; /* Define el ancho máximo del logo para que no sea demasiado grande */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    border-radius: 20%; /* Opcional: si quieres que el logo sea circular */
+    border: 0px solid #05183C; /* Opcional: un borde sutil para destacarlo */
+}
