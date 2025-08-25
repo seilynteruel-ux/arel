@@ -158,10 +158,11 @@ h2::after {
     text-decoration: underline;
 }
 .logo {
-    max-width: 400px; /* Define el ancho máximo del logo para que no sea demasiado grande */
+    max-width: 300px; /* Define el ancho máximo del logo para que no sea demasiado grande */
     height: auto; /* Mantiene la proporción de la imagen */
     margin-bottom: 20px; /* Espacio debajo del logo */
     border-radius: 0%; /* Opcional: si quieres que el logo sea circular */
     border: 0px solid #05183C; /* Opcional: un borde sutil para destacarlo */
 
 }
+
