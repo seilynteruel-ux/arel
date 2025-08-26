@@ -185,10 +185,11 @@ h2::after {
     text-decoration: underline;
 }
 .logo {
-    max-width: 300px;
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo en pantallas normales */
     height: auto;
     margin-bottom: 20px;
-    border-radius: 0%;
+    border-radius: 0;
     border: 0px solid #F4E2D8;
 }
 
@@ -321,5 +322,28 @@ h2::after {
         align-items: flex-start;
     }
 }
+
+/* Para pantallas grandes (computadoras) */
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 400px; /* Logo más grande en escritorio */
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1023px) and (min-width: 601px) {
+    .logo {
+        max-width: 300px;
+    }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 200px; /* Logo más pequeño en móviles */
+    }
+}
+
+
 
 
