@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Butler', serif; /* Tipo de letra para los títulos */
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .hero {
@@ -437,6 +437,7 @@ h2::after {
         max-width: 200px; /* Logo más pequeño en móviles */
     }
 }
+
 
 
 
