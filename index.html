@@ -59,16 +59,29 @@
         </section>
 
         <section class="gallery">
-            <h2>Nuestros Trabajos</h2>
-            <div class="photo-grid">
-                <img src="FOTO 1.jpeg" alt="Retrato fotográfico profesional">
-                <img src="FOTO 2.jpeg" alt="Fotografía de boda">
-                <img src="FOTO.jpeg" alt="Fotografía de evento">
-                <img src="FOTO 4.jpeg" alt="Fotografía de producto">
-                <img src="FOTO 5.jpeg" alt="Fotografía de producto">
-                <img src="FOTO 6.jpeg" alt="Fotografía de producto">
-            </div>
-        </section>
+    <h2>Nuestros Trabajos</h2>
+    <div class="photo-grid">
+        <div class="photo" data-title="Retrato fotográfico profesional">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO 1.jpeg" alt="Retrato fotográfico profesional">
+        </div>
+        <div class="photo" data-title="Fotografía de boda">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO 2.jpeg" alt="Fotografía de boda">
+        </div>
+        <div class="photo" data-title="Fotografía de evento">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO.jpeg" alt="Fotografía de evento">
+        </div>
+        <div class="photo" data-title="Fotografía de producto">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO 4.jpeg" alt="Fotografía de producto">
+        </div>
+        <div class="photo" data-title="Fotografía de producto">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO 5.jpeg" alt="Fotografía de producto">
+        </div>
+        <div class="photo" data-title="Fotografía de producto">
+            <img src="C:\Users\cielo\OneDrive\Escritorio\AREL\PAGINA WEB AREL PRUEBA\index\SERVICIOS\FOTO 6.jpeg" alt="Fotografía de producto">
+        </div>
+    </div>
+</section>
+
 
         <section class="packages">
     <h2>Nuestros Paquetes</h2>
@@ -139,10 +152,21 @@
     </footer>
     
     
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const photos = document.querySelectorAll(".photo");
+    photos.forEach((photo, index) => {
+        setTimeout(() => {
+            photo.classList.add("show");
+        }, index * 200); // cada foto aparece 0.2s después de la anterior
+    });
+});
+</script>
 
 
 </body>
 
 </html>
+
 
 
